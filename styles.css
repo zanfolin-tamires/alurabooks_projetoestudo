@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --backgroundcolor: #EBECEE; 
+    --primarycolor:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --secondarycolor: #EB9B00;
+    --white: #ffffff;
+    --fonteprincipal: "Poppins";
+    --fontelogo:'Josefin Sans', sans-serif;
+
+}
+
+
+* {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    font-family: var(--fonteprincipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* header */ 
+
+.cabecalho {
+    background-color: var(--white);
+    padding: 24px;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+/* banner */ 
+
+.banner {
+    background:var(--primarycolor);
+    padding: 32px 24px;
+    color: var(--white);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner__titulo {
+    font-size: 24px ;
+    font-weight: 700;
+    font-family: 'poppins';
+    margin-bottom: 8px;
+
+}
+
+.banner__texto {
+    font-size: 16px ;
+    font-weight: 400;
+    font-family: 'poppins';
+    margin-bottom: 24px;
+    line-height: 24px;
+
+}
+
+.banner__pesquisa {
+    padding: 16px 24px;
+    width: 380px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 24px;
+    text-align: center;
+   
+}
+
+.banner__pesquisa::placeholder {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 400;
+    
+    font-family: "poppins";
+    background: url(/imgs/Pesquisa.svg) no-repeat;
+   padding: 0 16px 0 48px;
+   background-position: 24px;
+   
+}
+
+
+/* carrossel */ 
+
+.carrossel__titulo {
+    color: var(--secondarycolor);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "poppins";
+    text-align: center;
+    padding: 32px 0;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: #ffffff;    
+}
+
+.swiper-slide img {
+    width: 100%;
+    
+
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 16px 0;
+}
+
+
+/* card */ 
+
+.card {
+    padding: 24px 24px;
+    background-color: var(--white);
+    border-radius: 16px;
+    margin: 32px auto;
+    width: 80vw;
+
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+   
+
+}
+
+.descricao__titulo {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "poppins";
+    margin-bottom: 8px;
+    color: var(--secondarycolor);
+    margin-right: 24px;
+}
+
+.descricao__titulo-livro {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "poppins";
+    margin-bottom: 8px;
+    line-height: 32px;
+    color: var(--fonteprincipal);
+    margin-right: 24px;
+}
+
+.descricao__texto {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "poppins";
+    margin-bottom: 8px;
+    line-height: 24px;
+    color: var(--primarycolor);
+    margin-right: 24px;
+    
+}
+
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.botoes {
+    display: flex;
+
+}
+
+.botoes__ancora {
+    padding: 8px 0;
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    font-size: 16px;
+    font-family: "poppins";
+    text-align: center;
+    line-height: 24px;
+    text-decoration: none;
+    width: 162px;
+    border-radius: 100px;
+
+}
+
+.descricao__imagem {
+    width: 162px;
+    height: 168px;
+}
+
+
+/* topicos */ 
+
+.topicos {
+    background:var(--primarycolor);
+    padding: 32px 24px;
+    color: var(--white);
+    font-family: "poppins";
+    text-align: center;
+    margin: auto ;
+ 
+
+}
+
+.topicos__lista {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+   
+
+}
+
+.topicos__item {
+padding: 16px;
+background-color:var(--secondarycolor);
+
+
+
+}
+
+.topicos__link {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* contato */ 
+
+
+.contato {
+    background-color: var(--white);
+    color: var(--primarycolor);
+    font-family: "poppins";
+    padding: 24px;
+    border-bottom: 2px solid var(--primarycolor);
+    
+text-align: center;
+}
+
+.contato__titulo {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contato__texto {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contato__email {
+    margin-top: 24px;
+    padding: 16px 0;  
+ width: 96%;
+    background-color: transparent;
+    border: 1px solid var(#002F52);
+    border-radius: 24px;
+
+   
+
+}
+
+.contato__email::placeholder {
+    font-size: 14px;
+    color: #002F52;
+    font-weight: 400;
+    
+    font-family: "poppins";
+    background: url(/imgs/Email.svg) no-repeat;
+   padding: 0 24px 0 40px;
+   background-position: 108px;
+   text-align: center;
+   
+}
+
+hr {
+    margin: 0;
+
+
+}
+
+/* footer */ 
+
+.rodape {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "poppins";
+    padding: 32px 0;
+    
+}
+
+.Logoalurabooks {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+
+.nav .list_favoritos {
+    display: block;
+}
+
+.rodape__links {
+    display: none;
+}
+
+@media screen and (min-width :1024px) {
+
+
+    .Logoalurabooks {
+        display: flex;
+        justify-content: center;
+    }
+
+    .opcoes {
+        display: flex;
+
+    }
+.opcoes__item {
+    padding: 0 16px;
+    font-family: 'poppins';
+    text-transform: uppercase;
+
+}
+
+.nav .list_favoritos {
+    display: none;
+}
+
+.nav .list_menu {
+    display: none;
+}
+
+.banner__titulo {
+    font-size: 32px;
+}
+
+.banner {
+    padding: 72px 24px;
+}
+
+.banner__pesquisa {
+    width: 476px;   
+}
+
+
+.banner__pesquisa::placeholder {
+    background-position: 6em;   
+}
+
+
+.swiper-pagination {
+    margin:  32px 0 64px 0;
+ }
+
+ .swiper {
+    width: 725px;
+    gap: 16px;
+ }
+
+
+ .swiper-slide img {
+    width: 98%;
+    
+
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    display: flex;
+
+}
+
+.card {
+    width: 800px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+
+}
+
+.topicos {
+    background:var(--primarycolor);
+    padding: 56px 24px;
+}
+
+
+.topicos__item {
+    padding: 24px;
+    background-color:var(--secondarycolor);
+ }
+    
+.topicos__link {
+    font-size: 16px;
+}
+
+
+.contato {
+
+    display: flex;
+   
+    justify-content: center;
+    padding: 56px 0;
+    align-items: center;
+}
+
+
+.contato__titulo {
+    font-size: 24px;
+}
+
+.contato__descricao {
+
+    text-align: left;
+    margin-right: 24px;
+   
+}
+
+.contato__email {
+    height: 44px;
+    width: 332px;
+    padding: 0;
+margin-top: 0;
+}
+
+.conteudo__contato {
+    width: 1024px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.contato__email::placeholder {
+    background-position: 72px;
+   
+
+}
+
+.rodape {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+    justify-content: space-between;
+
+
+}
+
+.rodape__links {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    justify-content: space-between;
+    width: 726px;
+}
+
+.links__titulo {
+    font-size: 14px;
+    color: #326589;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+
+
+
+.links__item img {
+    mix-blend-mode: multiply;
+}
+
+.links__item {
+    display: flex;
+  gap: 16px;
+    align-items: center;
+    padding: 10px 0;
+    color: var(--primarycolor);
+    font-size: 14px;
+}
+
+}
+
+.list_name {
+    display: none;
+}
+
+.container__list_name {
+    display: flex;
+}
+
+
+.opcoes__item:hover {
+    color: var(--secondarycolor);
+    font-weight: 700;
+}
+
+.list_name:hover {
+    color: var(--secondarycolor);
+    font-weight: 700;
+}
+
+.botoes__ancora:hover {
+    color: var(--white);
+    background-color: #002F52;
+
+
+}
+ 
+@media screen and (min-width:1728px) {
+    
+  
+.container__list_name {
+    display: flex;
+    gap: 32px;
+}
+
+
+.list {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "poppins";
+}
+
+.list_name {
+    display: flex;
+}
+
+
+.nav {
+    padding: 16x 400px;
+    width: 1340px;
+    margin: auto;
+}
+
+.opcoes {
+    margin-right: auto;
+}
+
+.Logoalurabooks {
+    margin-right: 16px;
+}
+
+.carrossel__container {
+    display: flex;
+    align-items: center;
+width: 1340px;
+gap: 32px;
+    margin: auto;
+}
+
+.card {
+    width: 588px;
+}
+
+.rodape {
+    display: flex;
+    width: 1340px;
+    margin: auto;
+
+    justify-content: space-between;
+
+
+}
+
+
+.conteudo__contato {
+    width: 1340px;
+    
+}
+
+
+
+
+.rodape__links {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    justify-content: space-between;
+    width: 940px;
+   
+    
+}
+
+
+.links {
+    border-left: 1px solid #002F52;
+    padding: 0 0 0 16px;
+    
+ 
+}
+
+.opcoes__item:hover {
+    color: var(--secondarycolor);
+    font-weight: 700;
+}
+
+.list_name:hover {
+    color: var(--secondarycolor);
+    font-weight: 700;
+}
+
+.botoes__ancora:hover {
+    color: var(--white);
+    background-color: #002F52;
+
+
+}
+
+.topicos__item:hover {
+    
+    background-color:#9e6a02;
+    
+    
+    
+    }
+
+
+
+
+}
